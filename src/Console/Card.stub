@@ -2,9 +2,9 @@
 
 namespace {{ namespace }};
 
-use Abordage\HtmlCard\HtmlCard;
+use Gabrielesbaiz\NovaHtmlCard\NovaHtmlCard;
 
-class {{ class }} extends HtmlCard
+class {{ class }} extends NovaHtmlCard
 {
     /**
      * Name of the card (optional, remove if not needed)
