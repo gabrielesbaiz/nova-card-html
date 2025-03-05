@@ -1,10 +1,10 @@
 <?php
 
-namespace Gabrielesbaiz\NovaHtmlCard;
+namespace Gabrielesbaiz\NovaCardHtml;
 
 use Laravel\Nova\Card;
 
-class NovaHtmlCard extends Card
+class CardHtml extends Card
 {
     public string $title = '';
 
@@ -18,7 +18,7 @@ class NovaHtmlCard extends Card
 
     public function __construct()
     {
-        parent::__construct('nova-html-card');
+        parent::__construct('nova-card-html');
 
         if (request()->is('nova-api/metrics/*')) {
             return;

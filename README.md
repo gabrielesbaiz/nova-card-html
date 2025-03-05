@@ -1,11 +1,11 @@
 # 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/gabrielesbaiz/nova-html-card.svg?style=flat-square)](https://packagist.org/packages/gabrielesbaiz/nova-html-card)
-[![Total Downloads](https://img.shields.io/packagist/dt/gabrielesbaiz/nova-html-card.svg?style=flat-square)](https://packagist.org/packages/gabrielesbaiz/nova-html-card)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/gabrielesbaiz/nova-card-html.svg?style=flat-square)](https://packagist.org/packages/gabrielesbaiz/nova-card-html)
+[![Total Downloads](https://img.shields.io/packagist/dt/gabrielesbaiz/nova-card-html.svg?style=flat-square)](https://packagist.org/packages/gabrielesbaiz/nova-card-html)
 
 A Laravel Nova card that displays any html content.
 
-Original code from [abordage/nova-html-card](https://github.com/abordage/nova-html-card)
+Original code from [abordage/nova-card-html](https://github.com/abordage/nova-card-html)
 
 ## Features
 
@@ -17,7 +17,7 @@ Original code from [abordage/nova-html-card](https://github.com/abordage/nova-ht
 You can install the package via composer:
 
 ```bash
-composer require gabrielesbaiz/nova-html-card
+composer require gabrielesbaiz/nova-card-html
 ```
 
 ## Usage
@@ -25,12 +25,12 @@ composer require gabrielesbaiz/nova-html-card
 To create a cards use the `artisan` command:
 
 ```bash
-php artisan nova-html-card MyHtmlCard
+php artisan nova-card-html MyHtmlCard
 ```
 
 ```php
-$novaHtmlCard = new Gabrielesbaiz\NovaHtmlCard();
-echo $novaHtmlCard->echoPhrase('Hello, Gabrielesbaiz!');
+$NovaCardHtml = new Gabrielesbaiz\NovaCardHtml();
+echo $NovaCardHtml->echoPhrase('Hello, Gabrielesbaiz!');
 ```
 
 By default, all new cards will be placed in the `app/Nova/Cards` directory. Once your html card class has been generated, 
@@ -42,9 +42,9 @@ you're ready to customize it.
 
 namespace App\Nova\Cards;
 
-use Gabrielesbaiz\NovaHtmlCard\NovaHtmlCard;
+use Gabrielesbaiz\NovaCardHtml\NovaCardHtml;
 
-class MyHtmlCard extends NovaHtmlCard
+class MyHtmlCard extends NovaCardHtml
 {
     /**
      * Name of the card (optional)

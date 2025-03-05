@@ -1,29 +1,13 @@
 <?php
 
-namespace Gabrielesbaiz\NovaHtmlCard\Tests;
+namespace Gabrielesbaiz\NovaCardHtml\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Gabrielesbaiz\NovaHtmlCard\NovaHtmlCardServiceProvider;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Gabrielesbaiz\NovaCardHtml\NovaCardHtmlServiceProvider;
 
 class TestCase extends Orchestra
 {
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Gabrielesbaiz\\NovaHtmlCard\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
-    }
-
-    protected function getPackageProviders($app)
-    {
-        return [
-            NovaHtmlCardServiceProvider::class,
-        ];
-    }
-
     public function getEnvironmentSetUp($app)
     {
         config()->set('database.default', 'testing');
@@ -33,5 +17,21 @@ class TestCase extends Orchestra
             (include $migration->getRealPath())->up();
          }
          */
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        Factory::guessFactoryNamesUsing(
+            fn (string $modelName) => 'Gabrielesbaiz\\NovaCardHtml\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+        );
+    }
+
+    protected function getPackageProviders($app)
+    {
+        return [
+            NovaCardHtmlServiceProvider::class,
+        ];
     }
 }

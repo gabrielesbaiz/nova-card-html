@@ -1,13 +1,13 @@
 <?php
 
-namespace Gabrielesbaiz\NovaHtmlCard;
+namespace Gabrielesbaiz\NovaCardHtml;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
 use Illuminate\Support\ServiceProvider;
-use Gabrielesbaiz\NovaHtmlCard\Console\CardCommand;
+use Gabrielesbaiz\NovaCardHtml\Console\CardCommand;
 
-class NovaHtmlCardServiceProvider extends ServiceProvider
+class NovaCardHtmlServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
@@ -17,8 +17,8 @@ class NovaHtmlCardServiceProvider extends ServiceProvider
     public function boot()
     {
         Nova::serving(function (ServingNova $event) {
-            Nova::script('nova-html-card', __DIR__ . '/../dist/js/card.js');
-            Nova::style('nova-html-card', __DIR__ . '/../dist/css/card.css');
+            Nova::script('nova-card-html', __DIR__ . '/../dist/js/card.js');
+            Nova::style('nova-card-html', __DIR__ . '/../dist/css/card.css');
         });
 
         if ($this->app->runningInConsole()) {

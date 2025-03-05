@@ -1,12 +1,12 @@
 {
-    "name": "gabrielesbaiz/nova-html-card",
+    "name": "gabrielesbaiz/nova-card-html",
     "description": "A Laravel Nova card that displays any html content.",
     "keywords": [
         "Gabriele Sbaiz",
         "laravel",
-        "nova-html-card"
+        "nova-card-html"
     ],
-    "homepage": "https://github.com/gabrielesbaiz/nova-html-card",
+    "homepage": "https://github.com/gabrielesbaiz/nova-card-html",
     "license": "MIT",
     "authors": [
         {
@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Gabrielesbaiz\\NovaHtmlCard\\": "src/"
+            "Gabrielesbaiz\\NovaCardHtml\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Gabrielesbaiz\\NovaHtmlCard\\Tests\\": "tests/",
+            "Gabrielesbaiz\\NovaCardHtml\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -58,7 +58,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Gabrielesbaiz\\NovaHtmlCard\\NovaHtmlCardServiceProvider"
+                "Gabrielesbaiz\\NovaCardHtml\\NovaCardHtmlServiceProvider"
             ]
         }
     },
