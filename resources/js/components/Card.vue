@@ -23,15 +23,17 @@ export default {
 
     computed: {
         cardStyle() {
-            return this.card.center ? 'flex flex-col items-center justify-center py-4' : 'px-6 py-4';
+            return this.card.center
+                ? "flex flex-col items-center justify-center py-4"
+                : "px-6 py-4";
         },
         fixedStyle() {
-            return this.card.title ? 'min-h-[90px]' : 'min-h-[128px]';
+            return this.card.title ? "min-h-[90px]" : "min-h-[128px]";
         },
         fixedInnerStyle() {
             return this.card.title
-                ? 'overflow-hidden overflow-y-auto fixed-html-card max-h-[90px]'
-                : 'overflow-hidden overflow-y-auto fixed-html-card max-h-[128px]';
+                ? "overflow-hidden overflow-y-auto fixed-card-html max-h-[90px]"
+                : "overflow-hidden overflow-y-auto fixed-card-html max-h-[128px]";
         },
     },
 };
