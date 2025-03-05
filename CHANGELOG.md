@@ -1,3 +1,3 @@
 # Changelog
 
-All notable changes to `nova-html-card` will be documented in this file.
+All notable changes to `nova-card-html` will be documented in this file.

@@ -4,6 +4,6 @@ require("./nova.mix");
 
 mix.setPublicPath("dist")
     .js("resources/js/card.js", "js")
-    .css("resources/css/card.css", "css")
     .vue({ version: 3 })
-    .nova("nova/html-card");
+    .css("resources/css/card.css", "css")
+    .nova("gabrielesbaiz/card-html");

@@ -1,6 +1,6 @@
 <?php
 
-namespace Gabrielesbaiz\NovaHtmlCard\Console;
+namespace Gabrielesbaiz\NovaCardHtml\Console;
 
 use Laravel\Nova\Nova;
 use Illuminate\Support\Str;
@@ -13,7 +13,7 @@ class CardCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'nova-html-card {name}';
+    protected $signature = 'nova-card-html {name}';
 
     /**
      * The console command description.

@@ -2,9 +2,9 @@
 
 namespace {{ namespace }};
 
-use Gabrielesbaiz\NovaHtmlCard\NovaHtmlCard;
+use Gabrielesbaiz\NovaCardHtml\CardHtml;
 
-class {{ class }} extends NovaHtmlCard
+class {{ class }} extends CardHtml
 {
     /**
      * Name of the card (optional, remove if not needed)
