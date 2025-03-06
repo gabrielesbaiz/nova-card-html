@@ -32,6 +32,11 @@ class CardHtml extends Card
         return '';
     }
 
+    public function extraData(array $extraData)
+    {
+        return $this->withMeta(['extraData' => $extraData]);
+    }
+
     public function jsonSerialize(): array
     {
         return array_merge([
