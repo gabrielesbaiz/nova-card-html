@@ -23,8 +23,6 @@ class CardHtml extends Card
         if (request()->is('nova-api/metrics/*')) {
             return;
         }
-
-        $this->content = $this->content();
     }
 
     public function content(): string
@@ -41,7 +39,7 @@ class CardHtml extends Card
     {
         return array_merge([
             'title' => $this->title,
-            'content' => $this->content,
+            'content' => $this->content(),
             'height' => $this->height,
             'center' => $this->center,
         ], parent::jsonSerialize());
