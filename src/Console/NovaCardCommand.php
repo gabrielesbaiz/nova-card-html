@@ -6,7 +6,7 @@ use Laravel\Nova\Nova;
 use Illuminate\Support\Str;
 use Illuminate\Console\GeneratorCommand;
 
-class CardCommand extends GeneratorCommand
+class NovaCardCommand extends GeneratorCommand
 {
     /**
      * The name and signature of the console command.
@@ -42,7 +42,7 @@ class CardCommand extends GeneratorCommand
      */
     protected function getStub(): string
     {
-        return __DIR__ . '/Card.stub';
+        return __DIR__ . '/NovaCard.stub';
     }
 
     /**

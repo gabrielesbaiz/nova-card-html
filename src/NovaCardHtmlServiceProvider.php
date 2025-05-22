@@ -5,7 +5,7 @@ namespace Gabrielesbaiz\NovaCardHtml;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
 use Illuminate\Support\ServiceProvider;
-use Gabrielesbaiz\NovaCardHtml\Console\CardCommand;
+use Gabrielesbaiz\NovaCardHtml\Console\NovaCardCommand;
 
 class NovaCardHtmlServiceProvider extends ServiceProvider
 {
@@ -22,7 +22,7 @@ class NovaCardHtmlServiceProvider extends ServiceProvider
         });
 
         if ($this->app->runningInConsole()) {
-            $this->commands([CardCommand::class]);
+            $this->commands([NovaCardCommand::class]);
         }
     }
 
