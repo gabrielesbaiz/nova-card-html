@@ -4,7 +4,7 @@ namespace Gabrielesbaiz\NovaCardHtml;
 
 use Laravel\Nova\Card;
 
-class CardHtml extends Card
+class NovaCardHtml extends Card
 {
     public string $title = '';
 
