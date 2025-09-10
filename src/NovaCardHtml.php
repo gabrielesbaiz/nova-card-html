@@ -18,7 +18,7 @@ class NovaCardHtml extends Card
 
     public function __construct()
     {
-        parent::__construct('card-html');
+        parent::__construct('nova-card-html');
 
         if (request()->is('nova-api/metrics/*')) {
             return;
