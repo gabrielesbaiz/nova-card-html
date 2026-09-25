@@ -1,10 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Gabrielesbaiz\NovaCardHtml\Console;
 
-use Laravel\Nova\Nova;
-use Illuminate\Support\Str;
 use Illuminate\Console\GeneratorCommand;
+use Laravel\Nova\Nova;
 
 class NovaCardCommand extends GeneratorCommand
 {
@@ -29,30 +30,24 @@ class NovaCardCommand extends GeneratorCommand
         /** @var string $name */
         $name = $this->argument('name');
 
-        /** @var string $key */
-        $key = preg_replace('/[^a-zA-Z\d]+/', '', $name);
-
-        return str_replace(['card-title', 'uri-key'], [Nova::humanize($name), Str::kebab($key)], $stub);
+        return str_replace('card-title', Nova::humanize($name), $stub);
     }
 
     /**
      * Get the stub file for the generator.
-     *
-     * @return string
      */
     protected function getStub(): string
     {
-        return __DIR__ . '/NovaCard.stub';
+        return __DIR__.'/NovaCard.stub';
     }
 
     /**
      * Get the default namespace for the class.
      *
-     * @param  string $rootNamespace
-     * @return string
+     * @param  string  $rootNamespace
      */
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return $rootNamespace . '\Nova\Cards';
+        return $rootNamespace.'\Nova\Cards';
     }
 }
