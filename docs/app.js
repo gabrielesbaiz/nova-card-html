@@ -1099,7 +1099,7 @@ function showRoute(){
 /* the landing page's opening sequence, run the first time it is shown */
 function startLanding(){
   requestAnimationFrame(function(){
-    requestAnimationFrame(function(){ document.body.classList.add("lit"); });
+    requestAnimationFrame(function(){ homeEl.classList.add("lit"); });
   });
   document.querySelectorAll("#home .reveal").forEach(function(el){ io.observe(el); });
 }
