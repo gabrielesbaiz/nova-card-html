@@ -610,7 +610,7 @@ php artisan nova-card-html:upgrade             <span class="cm"># apply</span></
 `},
 
 changelog:{ t:"Changelog", e:"", sub:"Mirrors CHANGELOG.md.", body:`
-<h2>3.0.0 <span class="pill">unreleased</span></h2>
+<h2>3.0.0 <span class="pill">2026-09-25</span></h2>
 <h3>Requirements</h3>
 <ul>
 <li>Requires PHP 8.3+, Laravel 12 or 13, and Nova 5.7+ (Nova 6 is explicitly conflicted).</li>
