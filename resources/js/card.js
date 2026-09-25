@@ -1,5 +1,6 @@
-import Card from "./components/Card";
+import "../css/card.css";
+import HtmlCard from "./components/HtmlCard.vue";
 
-Nova.booting((Vue) => {
-    Vue.component("card-html", Card);
+Nova.booting((app) => {
+    app.component("nova-card-html", HtmlCard);
 });

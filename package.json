@@ -1,21 +1,20 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "npm run development",
-    "development": "mix",
-    "watch": "mix watch",
-    "watch-poll": "mix watch -- --watch-options-poll=1000",
-    "hot": "mix watch --hot",
-    "prod": "npm run production",
-    "production": "mix --production",
-    "nova:install": "npm --prefix='../../vendor/laravel/nova' ci"
-  },
-  "devDependencies": {
-    "@vue/compiler-sfc": "^3.2.22",
-    "axios": "^1.6.0",
-    "laravel-mix": "^6.0.41",
-    "postcss": "^8.3.11",
-    "vue-loader": "^16.8.3",
-    "vuex": "^4.1.0"
-  }
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite build --watch --mode development",
+        "build": "vite build",
+        "test": "vitest run",
+        "format": "prettier --write resources/js"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.2.4",
+        "@vue/compiler-sfc": "^3.5.17",
+        "@vue/test-utils": "^2.4.6",
+        "happy-dom": "^20.14.5",
+        "prettier": "^3.5.3",
+        "vite": "^6.4.3",
+        "vitest": "^5.0.1",
+        "vue": "^3.5.17"
+    }
 }
