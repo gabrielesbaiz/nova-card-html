@@ -2,7 +2,7 @@
 
 All notable changes to `nova-card-html` will be documented in this file.
 
-## 3.0.0 - unreleased
+## 3.0.0 - 2026-09-25
 
 ### Requirements
 
