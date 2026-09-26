@@ -1,4 +1,4 @@
-/* nova-card-html — documentation site
+/* NovaCard HTML — documentation site
    One hash router over two route shapes: the landing page at #/home
    (full-width bands) and every docs page beside it (three columns). */
 (function(){
