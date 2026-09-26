@@ -1,5 +1,5 @@
 /*
- * Nova Card HTML
+ * NovaCard HTML
  *
  * Colours are driven by CSS custom properties with a `.dark` override, so cards
  * no longer have to hand-write their own dark mode rules. Nova toggles the

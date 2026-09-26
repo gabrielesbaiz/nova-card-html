@@ -1,11 +1,11 @@
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="art/nova-card-html-logo.png">
-        <img src="art/nova-card-html-logo-light.png" alt="NovaCardHtml" width="600">
+        <img src="art/nova-card-html-logo-light.png" alt="NovaCard HTML" width="600">
     </picture>
 </p>
 
-# Nova Card HTML
+# NovaCard HTML
 
 Any HTML you can render in PHP, as a Laravel Nova card — a string, a Markdown document or a Blade view, placed on the dashboard grid, lazy-loaded so it never blocks the paint.
 
