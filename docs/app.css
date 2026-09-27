@@ -94,6 +94,7 @@ a{color:var(--at)}
 @media(max-width:1040px){}
 @media(max-width:560px){#home .searchbtn span{display:none}}
 #home .hero{padding:clamp(2.2rem,5vw,3.4rem) 0 clamp(1.6rem,3vw,2.2rem)}
+#home .hero .mark{display:block;width:min(30rem,78vw);height:auto;margin:0 0 1.4rem}
 #home .giant{
   font-size:clamp(3.6rem,15.5vw,13rem);
   line-height:.76;letter-spacing:-.035em;text-transform:uppercase;
