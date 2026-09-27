@@ -1,8 +1,5 @@
 <p align="center">
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="art/nova-card-html-logo.png">
-        <img src="art/nova-card-html-logo-light.png" alt="NovaCard HTML" width="600">
-    </picture>
+    <img src="art/nova-card-html-logo.png" alt="NovaCard HTML" width="600">
 </p>
 
 # NovaCard HTML
